@@ -1,7 +1,7 @@
 # golang-dev
 
-# docker��Ŏ��s
+# dockerでGOを実行
 docker-compose exec app go run main.go
 
-# docker�ɐڑ�
+# dockerにbashでログイン
 docker-compose exec app /bin/bash
