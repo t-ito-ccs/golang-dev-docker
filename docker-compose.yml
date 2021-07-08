@@ -1,0 +1,16 @@
+version: '3'
+services:
+  golang-dev:
+    # ビルドに使用するDockerfileがあるディレクトリ指定
+    build: .
+    # コンテナの起動永続化
+    tty: true
+    # マウントディレクトリ指定
+    volumes:
+      - ./volumes:/go/src/work
+    # ネットワーク定義
+    networks:
+      # ネットワークセグメント
+      docker-dev-link:
+      # ネットワーク名
+      external: false
